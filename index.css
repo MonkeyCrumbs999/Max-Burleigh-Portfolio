@@ -703,8 +703,9 @@ footer {
     
     footer{
       justify-content: center;
-      margin-top:35%;
+      margin: 35% 0;
     }
+
 }
 
 @media only screen and (max-width:376px){
