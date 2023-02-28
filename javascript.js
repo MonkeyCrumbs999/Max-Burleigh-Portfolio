@@ -68,14 +68,21 @@ function closePopup() {
 
 // Reset URL back to normal without anchor tag:
 
-// const anchorTags = document.querySelectorAll('a[href^="#"]');
-// anchorTags.forEach(anchorTag => {
-//   anchorTag.addEventListener('click', function(event) {
-//     event.preventDefault(); // Prevent the default behavior of jumping to the anchor
-//     const target = document.querySelector(this.hash); // Get the target element
-//     const href = this.getAttribute('href'); // Get the href attribute of the anchor tag
-//     window.history.replaceState(null, null, href); // Replace the current URL with the URL without the anchor fragment
-//     target.scrollIntoView({behavior: 'smooth'}); // Scroll to the target element
-//     window.location.replace(window.location.href.split('#')[0]); // Replace the URL back to its original state
-//   });
-// });
+const anchorTags = document.querySelectorAll('a[href^="#"]');
+anchorTags.forEach(anchorTag => {
+  anchorTag.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default behavior of jumping to the anchor
+    const target = document.querySelector(this.hash); // Get the target element
+    const href = this.getAttribute('href'); // Get the href attribute of the anchor tag
+    window.history.replaceState(null, null, href); // Replace the current URL with the URL without the anchor fragment
+    target.scrollIntoView({behavior: 'smooth'}); // Scroll to the target element
+    window.location.replace(window.location.href.split('#')[0]); // Replace the URL back to its original state
+  });
+});
+
+
+function updateEmail(){
+const emailLink = document.getElementById('email-address');
+
+emailLink.setAttribute('href', "mailto:webwavebuilding@gmail.com");
+}

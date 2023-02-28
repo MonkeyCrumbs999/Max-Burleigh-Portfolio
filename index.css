@@ -326,7 +326,7 @@ span.text-decor {
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  margin-top: 30vh;
+  margin-top: 25vh;
   margin-bottom: 10%;
 }
 
@@ -569,6 +569,7 @@ footer {
   padding-bottom: 25px;
   gap: 25px;
 }
+
 /* END OF FOOTER */
 
 /* MEDIA QUERIES */
