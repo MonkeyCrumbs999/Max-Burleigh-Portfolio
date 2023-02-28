@@ -555,7 +555,7 @@ input[type="submit"]:hover {
   color: #ffffff;
   position: absolute;
   top: -15px;
-  right: -85px;
+  right: -75px;
   padding: 5px 10px;
   transform: rotate(25deg);
 }
@@ -662,7 +662,7 @@ footer {
     width:35%;
   }
   .multi-container{
-    gap: 15px;
+    gap: 18px;
   }
   .multi-container h2{
     font-size: 2em;
@@ -693,12 +693,17 @@ footer {
     .home-button::before {
     font-size: 1em;
     top: -15px;
-    right: -70px;
+    right: -45px;
     padding: 5px 10px;
     }
     
     .container-intro{
       min-height: 25vh;
+    }
+    
+    footer{
+      justify-content: center;
+      margin-top:35%;
     }
 }
 
