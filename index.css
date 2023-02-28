@@ -551,10 +551,10 @@ input[type="submit"]:hover {
 
 .home-button::before {
   content: "click me :)";
-  font-size: 1.2em;
+  font-size: 1em;
   color: #ffffff;
   position: absolute;
-  top: -20px;
+  top: -15px;
   right: -85px;
   padding: 5px 10px;
   transform: rotate(25deg);
