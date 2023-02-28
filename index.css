@@ -706,6 +706,10 @@ footer {
       margin: 35% 0;
     }
 
+    .multi-container{
+      margin-top: 20vh;
+    }
+
 }
 
 @media only screen and (max-width:376px){
