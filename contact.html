@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a5c79">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0a5c79">
+    <title>Max Burleigh: Contact Me</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Yellowtail&display=swap");
+    </style>
+    <script
+      defer
+      src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"
+    ></script>
+    <script
+      defer
+      src="node_modules/@fortawesome/fontawesome-free/js/brands.js"
+    ></script>
+    <script
+      defer
+      src="node_modules/@fortawesome/fontawesome-free/js/solid.js"
+    ></script>
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+      emailjs.init('QXH-ZNI5yK9ppXX6W')
+    </script>
+
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><h1>max burleigh</h1></a>
+        <h2>my official site</h2>
+      </div>
+      <nav>
+        <ul>
+          <a href="index.html">
+            <li>Home</li>
+          </a>
+          <a href="index.html#aboutme" onclick="scrollTo()">
+            <li>About Me</li>
+          </a>
+          <a href="portfolio.html">
+            <li>Portfolio</li>
+          </a>
+          <a href="contact.html#contactme">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="index.html#aboutme" onclick="closeNav()">About Me</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html#contactme">Contact</a>
+        </div>
+      </div>
+      <span
+        id="hamburger"
+        style="font-size: 30px; cursor: pointer"
+        onclick="openNav()"
+        >&#9776;</span
+      >
+    </header>
+
+    <main class="contactme-container" id="contactme">
+      <div class="left-col">
+        <h3>Contact Me</h3>
+        <svg width="100%" height="20">
+          <line
+            x1="0"
+            y1="10"
+            x2="100%"
+            y2="10"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
+        <form id="form">
+          <div class="field">
+            <label for="from_name">Name</label>
+            <input type="text" name="from_name" id="from_name" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="4" placeholder = "Write your message for me here!" required></textarea>
+          </div>
+          
+          <div class="field">
+            <label for="reply_to">Email Address</label>
+            <input type="text" name="reply_to" id="reply_to" required>
+          </div>
+
+          <div class="field">
+            <label for="oregon_capital">What is the capital of Oregon?</label>
+            <input type="text" name="oregon_capital" id="oregon_capital" required>
+          </div>
+          
+        
+          <input type="submit" id="button" value="Submit" >
+          
+        </form>
+        
+      </div>
+
+      <div class="right-col">
+        <img src="photo.jpeg" alt="" />
+      </div>
+    </main>
+
+    <footer>
+      <a href="https://github.com/MonkeyCrumbs999/maxburleigh-portfolio">
+      <i
+        class="fa-brands fa-github-square"
+        style="color: white; font-size: 55px"
+      ></i>
+      </a>
+      <a href="https://www.linkedin.com/in/max-burleigh/">
+      <i
+        class="fa-brands fa-linkedin-in"
+        style="color: white; font-size: 55px"
+      ></i>
+      </a>
+      <a href="" onclick=updateEmail() id="email-address">
+        <i class="fa-solid fa-envelope" style="color: white; font-size: 55px"></i>
+        </a>
+    </footer>
+
+    <script src="javascript.js" type = "text/javascript"></script>
+  
+  </body>
+</html>

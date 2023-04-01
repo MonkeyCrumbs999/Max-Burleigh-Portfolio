@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a5c79">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0a5c79">
+
+    <title>Max Burleigh: My Official Website</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Yellowtail&display=swap");
+    </style>
+    <script
+      defer
+      src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"
+    ></script>
+    <script
+      defer
+      src="node_modules/@fortawesome/fontawesome-free/js/brands.js"
+    ></script>
+    <script
+      defer
+      src="node_modules/@fortawesome/fontawesome-free/js/solid.js"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-mBh6FdGZ3qPJZzI33VpUn+UEsW7VvN9bOcIvkL+67bZw8RvECOD26+ulm0BzO/KOy8mS0gAenG/gQQxL19H+rQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <div id="popup" onclick = "closePopup()">
+      <button>&times;</button>
+      <p>Hey guys, just a heads up, this website is currently under construction and is a work-in-progress. It may not be fully optimized for mobile yet, and probably has some bugs! <br><br>Stay tuned.</p>
+    </div>
+    <header>
+      <div class="logo">
+        <a href="index.html"><h1>max burleigh</h1></a>
+        <h2>my official site</h2>
+      </div>
+      <nav>
+        <ul>
+          <a href="index.html">
+            <li>Home</li>
+          </a>
+          <a href="index.html#aboutme" onclick="scrollTo()">
+            <li>About Me</li>
+          </a>
+          <a href="portfolio.html">
+            <li>Portfolio</li>
+          </a>
+          <a href="contact.html#contactme">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="index.html#aboutme" onclick="closeNav()">About Me</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html#contactme">Contact</a>
+        </div>
+      </div>
+      <span
+        id="hamburger"
+        style="font-size: 30px; cursor: pointer;"
+        onclick="openNav()"
+        >&#9776;</span
+      >
+    </header>
+    <main class="content">
+      <div class="container-intro">
+        <div class="introduction">
+          <p>
+            Hi, my name is <span class="text-decor">Max Burleigh.</span><br />I
+            am passionate about...
+          </p>
+          <p class="anim-typewriter">web development.</p>
+          <p class="anim-typewriter">beautiful design.</p>
+          <p class="anim-typewriter">personal growth.</p>
+        </div>
+        <div class="headshot-section">
+          <img src="photo.jpeg" alt="" />
+        </div>
+      </div>
+      <div class="container-arrow override">
+        <a href="#statement" onclick="scrollTo()"
+          ><i class="arrow down" id="first-arrow"></i
+        ></a>
+      </div>
+      <div class="container">
+        <div class="statement" id="statement">
+          <p>
+            My name is Max Burleigh, and I created this website to show off my
+            skills and showcase my projects.
+          </p>
+          <p>
+            I wrote it from scratch using vanilla HTML, CSS, and JavaScript!
+          </p>
+        </div>
+      </div>
+
+      <div class="container-arrow">
+        <a href="#aboutme" onclick="scrollTo()"
+          ><i class="arrow down" id="second-arrow"></i
+        ></a>
+      </div>
+
+      <div class="multi-container">
+        <h2 class="text-decor">About Me</h2>
+        <div id="aboutme">
+          <p>Hey everyone, my name is Max Burleigh.</p>
+          <p>
+            Since I was young, I've always been fascinated by two things: useful
+            technology and beautiful design.
+          </p>
+          <p>
+            Being naturally attracted to those things made web development a
+            particularly interesting career field for me to want to explore.
+          </p>
+          <p>
+            So, at the age of 28, and after 10 years of working at Best Buy, I
+            decided it was time to pursue it!
+          </p>
+          <p>
+            Besides front-end web development I enjoy music, my kiddos, and
+            comedy.
+          </p>
+          <p>
+            Thank you for visiting, check out my portfolio by clicking the link
+            below and don't forget to visit my social media sites in the footer.
+          </p>
+        </div>
+        <a href="portfolio.html"
+          ><button class="home-button">portfolio</button></a
+        >
+      </div>
+    </main>
+    
+    <footer>
+      <a href="https://github.com/MonkeyCrumbs999/Max-Burleigh-Portfolio/tree/master">
+      <i
+        class="fa-brands fa-github-square"
+        style="color: white; font-size: 55px"
+      ></i>
+      </a>
+      <a href="https://www.linkedin.com/in/max-burleigh/">
+      <i
+        class="fa-brands fa-linkedin-in"
+        style="color: white; font-size: 55px"
+      ></i>
+      </a>
+      <a href="#" onclick=updateEmail() id="email-address">
+      <i class="fa-solid fa-envelope" style="color: white; font-size: 55px"></i>
+      </a>
+    </footer>
+
+    <script src="javascript.js" type = "text/javascript"></script>
+  </body>
+</html>
