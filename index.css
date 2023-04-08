@@ -390,6 +390,8 @@ span.text-decor {
 .port-mockup{
   border-radius: 10%;
   align-self: center;
+  width: 50%;
+  height: 50%;
 }
 
 .portfolio-2{
@@ -639,6 +641,9 @@ footer {
   .left-col {
     width: 35%;
   }
+  .port-mockup{
+    margin-top:25px;
+  }
 }
 
 /* Screens up to 980px width */
@@ -676,6 +681,7 @@ footer {
 
 /* Screens up to 850px width */
 @media only screen and (max-width: 850px) {
+  
   .container-intro {
     justify-content: center;
   }
@@ -715,6 +721,12 @@ footer {
     padding: 30px 35px;
     width: 55%;
   }
+
+  .port-mockup{
+    width: 90%;
+    height: 90%;
+  }
+  
 }
 
 /* Screens up to 650px width */
@@ -755,6 +767,7 @@ footer {
   }.multi-container {
     margin-top: 20vh;
     }
+
     }
     
     /* Screens up to 376px width */
@@ -792,6 +805,7 @@ footer {
     top: 15px;
     right: 35px;
     }
+
     }
     
     /* END OF MEDIA QUERIES */
