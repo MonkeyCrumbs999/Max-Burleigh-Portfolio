@@ -409,6 +409,12 @@ span.text-decor {
   gap: 15px;
   padding: 0 10px 0 10px;
 }
+
+.port-logo {
+  max-width: 100%;
+  height: auto;
+}
+
 /* END OF CONTAINER */
 
 /* CONTACT FORM */
