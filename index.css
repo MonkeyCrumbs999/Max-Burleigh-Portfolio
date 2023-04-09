@@ -32,7 +32,7 @@ h4 {
 }
 
 h3 {
-  font-size:2em;
+  font-size: 2em;
 }
 
 /* END OF ELEMENTS */
@@ -44,7 +44,6 @@ body {
   animation: gradient 30s ease infinite;
   background-attachment: fixed;
   height: -webkit-fill-available;
-
 }
 
 body::-webkit-scrollbar {
@@ -124,8 +123,8 @@ nav ul li {
   border-radius: 50%;
 }
 
-na ul li:nth-child(4){
-  padding-right: .65em;
+na ul li:nth-child(4) {
+  padding-right: 0.65em;
 }
 
 nav ul:hover {
@@ -379,7 +378,7 @@ span.text-decor {
   border-radius: 25px;
 }
 
-.portfolio h2{
+.portfolio h2 {
   font-size: 2em;
 }
 
@@ -387,14 +386,14 @@ span.text-decor {
   text-align: start;
 }
 
-.port-mockup{
+.port-mockup {
   border-radius: 10%;
   align-self: center;
   width: 50%;
   height: 50%;
 }
 
-.portfolio-2{
+.portfolio-2 {
   display: flex;
   flex-direction: row;
   padding: 0 25px 0;
@@ -402,13 +401,13 @@ span.text-decor {
   flex-wrap: wrap;
 }
 
-.portfolio-desc{
+.portfolio-desc {
   display: flex;
   flex-direction: column;
   width: 350px;
   justify-content: space-evenly;
   gap: 15px;
-  padding:0 10px 0 10px;
+  padding: 0 10px 0 10px;
 }
 /* END OF CONTAINER */
 
@@ -489,7 +488,7 @@ input[type="submit"]:hover {
 
 /*POPUP*/
 #popup {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   position: fixed;
   top: 50%;
   left: 50%;
@@ -525,9 +524,8 @@ input[type="submit"]:hover {
 
 .fade-out {
   opacity: 0;
-  transition: opacity .5s ease-out;
+  transition: opacity 0.5s ease-out;
 }
-
 
 /*END OF POPUP*/
 
@@ -620,7 +618,6 @@ footer {
 
 /* END OF FOOTER */
 
-
 /* MEDIA QUERIES */
 
 /* Screens up to 1600px width */
@@ -641,8 +638,8 @@ footer {
   .left-col {
     width: 35%;
   }
-  .port-mockup{
-    margin-top:25px;
+  .port-mockup {
+    margin-top: 25px;
   }
 }
 
@@ -677,11 +674,13 @@ footer {
   #popup {
     width: 90vw;
   }
+  .portfolio-desc {
+    width: 100%;
+  }
 }
 
 /* Screens up to 850px width */
 @media only screen and (max-width: 850px) {
-  
   .container-intro {
     justify-content: center;
   }
@@ -722,11 +721,10 @@ footer {
     width: 55%;
   }
 
-  .port-mockup{
+  .port-mockup {
     width: 90%;
     height: 90%;
   }
-  
 }
 
 /* Screens up to 650px width */
@@ -764,48 +762,47 @@ footer {
   footer {
     justify-content: center;
     margin: 35% 0;
-  }.multi-container {
+  }
+  .multi-container {
     margin-top: 20vh;
-    }
+  }
+}
 
-    }
-    
-    /* Screens up to 376px width */
-    @media only screen and (max-width: 376px) {
-    #aboutme {
-    font-size: .8em;
-    }
-    }
-    
-    /* Screens over 980px width */
-    @media screen and (min-width: 980px) {
-    #hamburger {
+/* Screens up to 376px width */
+@media only screen and (max-width: 376px) {
+  #aboutme {
+    font-size: 0.8em;
+  }
+}
+
+/* Screens over 980px width */
+@media screen and (min-width: 980px) {
+  #hamburger {
     display: none;
-    }
-    }
-    
-    /* Screens over 100px width */
-    @media screen and (min-width: 100px) {
-    .overlay a {
+  }
+}
+
+/* Screens over 100px width */
+@media screen and (min-width: 100px) {
+  .overlay a {
     -webkit-text-fill-color: white;
     font-family: "Yellowtail";
-    }
-    }
-    
-    /* Screens up to 450px height */
-    @media screen and (max-height: 450px) {
-    .overlay {
+  }
+}
+
+/* Screens up to 450px height */
+@media screen and (max-height: 450px) {
+  .overlay {
     overflow-y: auto;
-    }
-    .overlay a {
+  }
+  .overlay a {
     font-size: 20px;
-    }
-    .overlay .closebtn {
+  }
+  .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
-    }
+  }
+}
 
-    }
-    
-    /* END OF MEDIA QUERIES */
+/* END OF MEDIA QUERIES */
