@@ -574,43 +574,36 @@ input[type="submit"]:hover {
 /* END ABOUT ME  */
 
 /* BUTTON */
-.home-button {
+.submit-button {
   font-family: "Roboto";
   font-size: 1.3em;
   color: #ffffff;
   background: linear-gradient(90deg, #0066cc 0%, #d628b0 100%);
-  padding: 30px 58px;
+  padding: 30px 50px;
   border: none;
   box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
   border-radius: 22px 50px;
   transition: 327ms;
   transform: translateY(0);
   margin: 1em 0 1em;
+  width: 100%;
+  max-width: 300px;
   cursor: pointer;
 }
 
-.home-button:hover {
+.submit-button:hover {
   transition: 327ms;
-  padding: 30px 70px;
+  padding: 30px 60px;
   transform: translateY(-0px);
   background: linear-gradient(90deg, #0066cc 0%, #d628b0 100%);
   color: #ffffff;
   border: none;
   box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0066cc,
     0 0 70px #0066cc, 0 0 80px #0066cc, 0 0 100px #0066cc, 0 0 10px #0066cc;
-  position: relative;
+  width: 100%;
+  max-width: 325px;
 }
 
-.home-button::before {
-  content: "click me :)";
-  font-size: 1em;
-  color: #ffffff;
-  position: absolute;
-  top: -15px;
-  right: -65px;
-  padding: 5px 10px;
-  transform: rotate(25deg);
-}
 /*END OF BUTTON*/
 
 /* FOOTER */
@@ -718,15 +711,6 @@ footer {
     flex-direction: column;
     gap: 25px;
   }
-  input[type="submit"] {
-    padding: 30px 25px;
-    width: 45%;
-  }
-  input[type="submit"]:hover {
-    padding: 30px 35px;
-    width: 55%;
-  }
-
   .port-mockup {
     width: 90%;
     height: 90%;
@@ -741,6 +725,13 @@ footer {
   .portfolio {
     width: 90%;
   }
+  input[type="submit"] {
+    width: 60%;
+  }
+
+  input[type="submit"]:hover {
+    width: 70%;
+  }
 }
 
 /* Screens up to 500px width */
@@ -751,20 +742,7 @@ footer {
   .multi-container #aboutme {
     width: 90%;
   }
-  .home-button {
-    font-size: 1em;
-    padding: 20px 40px;
-    border-radius: 18px 40px;
-  }
-  .home-button:hover {
-    padding: 20px 50px;
-  }
-  .home-button::before {
-    font-size: 1em;
-    top: -15px;
-    right: -45px;
-    padding: 5px 10px;
-  }
+
   .container-intro {
     min-height: 25vh;
   }
