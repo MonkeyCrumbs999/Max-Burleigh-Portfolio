@@ -738,6 +738,9 @@ footer {
   .left-col {
     width: 80%;
   }
+  .portfolio {
+    width: 90%;
+  }
 }
 
 /* Screens up to 500px width */
